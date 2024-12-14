@@ -134,6 +134,9 @@
 }
 
 @media (max-width: 480px) {
+  .weather{
+    max-height: 80%;
+  }
   .search-bar {
      /* Stack the input and button */
     gap: 10px;
