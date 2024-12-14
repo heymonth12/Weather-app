@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
   font-family: "Poppins", sans-serif;
@@ -9,152 +9,160 @@
 
 .app {
   min-height: 100vh;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #e2d4ff;
-  place-items: center;
-  padding: 20px; /* Add padding for smaller screens */
+  padding: 20px;
 }
 
 .weather {
-  place-self: center;
-  padding: 40px;
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 12px;
   background-image: linear-gradient(50deg, #2f4680, #43003c);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Ensure it adapts on small screens */
-  max-width: 400px; /* Limit max width */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for better design */
+  width: 100%;
+  max-width: 420px; /* Limit for larger screens */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .search-bar {
   display: flex;
   align-items: center;
-  gap: 12px;
-  width: 100%; /* Stretch input field */
+  gap: 10px;
+  width: 100%;
 }
 
 .search-bar input {
-  height: 50px;
+  height: 45px;
   border: none;
   outline: none;
   border-radius: 40px;
-  padding-left: 25px;
-  color: #414141;
+  padding-left: 15px;
+  flex-grow: 1; /* Input takes the remaining space */
   background: #e2fffb;
-  font-size: 18px;
+  color: #414141;
+  font-size: 16px;
   font-weight: 600;
-  flex-grow: 1; /* Make input take up remaining space */
 }
 
 .search-bar img {
-  width: 50px;
-  padding: 15px;
+  width: 40px;
+  padding: 10px;
   border-radius: 50%;
   background: #ebfffc;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.search-bar img:hover {
+  transform: scale(1.1); /* Subtle hover effect */
 }
 
 .weather-icon {
-  width: 150px;
-  margin: 30px 0;
+  width: 120px;
+  margin: 25px 0;
 }
 
 .temp {
   color: #fff;
-  font-size: 80px;
+  font-size: 70px;
+  font-weight: 600;
   line-height: 1;
-  text-align: center; /* Center text on smaller screens */
+  text-align: center;
 }
 
 .location {
   color: #fff;
-  font-size: 40px;
-  text-align: center; /* Center text */
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .weather-data {
-  width: 100%;
-  margin-top: 40px;
-  color: #fff;
   display: flex;
-  flex-wrap: wrap; /* Wrap items on small screens */
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px; /* Add gap for better spacing */
+  width: 100%;
+  margin-top: 20px;
+  gap: 15px; /* Spacing between items */
 }
 
 .weather-data .col {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 22px;
-  flex: 1 1 calc(50% - 10px); /* Two columns on small screens */
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #fff;
+  flex: 1 1 calc(50% - 10px); /* Two items per row */
 }
 
 .weather-data .col span {
-  display: block;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .weather-data .col img {
-  width: 26px;
-  margin-top: 10px;
+  width: 24px;
+  margin-top: 5px;
 }
 
-/* Add responsiveness using media queries */
+/* Responsive Design */
 @media (max-width: 768px) {
   .weather {
-    padding: 20px; /* Reduce padding for small devices */
-    max-width: 90%; /* Expand to fit the screen */
+    padding: 20px;
   }
 
   .temp {
-    font-size: 60px; /* Reduce font size */
+    font-size: 60px;
   }
 
   .location {
-    font-size: 30px; /* Reduce font size */
+    font-size: 24px;
   }
 
   .weather-data .col {
-    font-size: 18px; /* Adjust font size for mobile */
+    font-size: 14px;
+    gap: 8px;
   }
 
   .weather-icon {
-    width: 100px; /* Reduce icon size */
+    width: 100px;
   }
 }
 
 @media (max-width: 480px) {
   .search-bar {
-    flex-direction: column; /* Stack input and button */
+    flex-direction: column; /* Stack the input and button */
     gap: 10px;
   }
 
-  .search-bar img {
-    width: 40px;
-    padding: 10px;
+  .search-bar input {
+    width: 100%;
   }
 
-  .weather {
-    padding: 15px;
+  .search-bar img {
+    align-self: center;
+    width: 35px;
+    padding: 8px;
   }
 
   .temp {
-    font-size: 50px;
+    font-size: 20px;
   }
 
   .location {
-    font-size: 25px;
-  }
-
-  .weather-data {
-    gap: 10px; /* Reduce gap for smaller screens */
+    font-size: 20px;
   }
 
   .weather-data .col {
-    flex: 1 1 100%; /* Make each item take full width */
-    justify-content: center; /* Center-align items */
+    font-size: 13px;
+    flex: 1 1 100%; /* Make items stack on top of each other */
+  }
+
+  .weather {
+    width: 100%;
   }
 }
