@@ -118,7 +118,10 @@
   .temp {
     font-size: 60px;
   }
-
+  .w{
+    color: white;
+    font-size: 22px;
+  }
   .location {
     font-size: 24px;
   }
@@ -147,6 +150,7 @@
   }
   .w{
     color: white;
+    font-size: 20px;
   }
 
   .search-bar img {
