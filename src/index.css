@@ -135,31 +135,31 @@
 
 @media (max-width: 480px) {
   .search-bar {
-    flex-direction: column; /* Stack the input and button */
+     /* Stack the input and button */
     gap: 10px;
   }
 
   .search-bar input {
-    width: 80%;
+    width: 60%;
   }
 
   .search-bar img {
     align-self: center;
-    width: 32px;
-    padding: 6px;
+    width: 28px;
+    padding: 5px;
   }
 
   .temp {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .location {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .weather-data .col {
-    font-size: 10px;
-    flex: 1 1 90%; /* Make items stack on top of each other */
+    font-size: 8px;
+    flex: 1 1 85%; /* Make items stack on top of each other */
   }
 
   .weather {
