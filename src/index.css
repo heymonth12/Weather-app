@@ -114,6 +114,11 @@
   margin-top: 5px;
 }
 
+.w{
+  font-size: 40px;
+  color: white;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .weather {
