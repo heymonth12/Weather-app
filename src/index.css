@@ -140,26 +140,26 @@
   }
 
   .search-bar input {
-    width: 100%;
+    width: 80%;
   }
 
   .search-bar img {
     align-self: center;
-    width: 35px;
-    padding: 8px;
+    width: 32px;
+    padding: 6px;
   }
 
   .temp {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .location {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .weather-data .col {
-    font-size: 13px;
-    flex: 1 1 100%; /* Make items stack on top of each other */
+    font-size: 10px;
+    flex: 1 1 90%; /* Make items stack on top of each other */
   }
 
   .weather {
