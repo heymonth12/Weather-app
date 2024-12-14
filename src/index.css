@@ -138,8 +138,10 @@
 }
 
 @media (max-width: 480px) {
+  .app{height: 80%;}
+
   .weather{
-    max-height: 80%;
+    max-height: 70%;
   }
   .search-bar {
      /* Stack the input and button */
