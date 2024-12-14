@@ -145,6 +145,9 @@
   .search-bar input {
     width: 60%;
   }
+  .w{
+    color: white;
+  }
 
   .search-bar img {
     align-self: center;
@@ -153,15 +156,15 @@
   }
 
   .temp {
-    font-size: 7px;
+    font-size: 27px;
   }
 
   .location {
-    font-size: 7px;
+    font-size: 27px;
   }
 
   .weather-data .col {
-    font-size: 6px;
+    font-size: 20px;
     flex: 1 1 85%; /* Make items stack on top of each other */
   }
 
