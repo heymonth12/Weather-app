@@ -150,15 +150,15 @@
   }
 
   .temp {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   .location {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   .weather-data .col {
-    font-size: 8px;
+    font-size: 6px;
     flex: 1 1 85%; /* Make items stack on top of each other */
   }
 
