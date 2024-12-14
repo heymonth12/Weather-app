@@ -138,7 +138,7 @@
 }
 
 @media (max-width: 480px) {
-  .app{height: 80%;}
+  .app{max-height: 70%;}
 
   .weather{
     max-height: 70%;
